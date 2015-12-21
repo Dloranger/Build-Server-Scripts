@@ -17,7 +17,7 @@ rm -rf $WRK_DIR
 TIME=$(date +"%a, %d %b %Y %X")
 
 #Get the main src
-wget https://github.com/rneese45/svxlink/archive/$PKG_VER.tar.gz
+wget https://github.com/kb3vgw/svxlink/archive/$PKG_VER.tar.gz
 
 #Build svxlink
 
