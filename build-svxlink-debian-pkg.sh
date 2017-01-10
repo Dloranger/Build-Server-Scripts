@@ -1,9 +1,10 @@
 #!/bin/bash
 
 #set arch
+i386="n"
 amd64="n"
-arm64="y"
-armhf="n"
+arm64="n"
+armhf="y"
 
 #Set Pkg Build Version
 PKG_NAME=svxlink
@@ -45,6 +46,8 @@ elif [[ $armhf == "y" ]]; then
 time dpkg-buildpackage -rfakeroot -i -j5 -us -uc --host-arch armhf
 elif [[ $amd64 == "y" ]]; then
 time dpkg-buildpackage -rfakeroot -i -j5 -us -uc --host-arch amd64
+elif [[ $i386 == "y" ]]; then
+time dpkg-buildpackage -rfakeroot -i -j5 -us -uc --host-arch i386
 fi
 
 cd $WRK_DIR || exit
