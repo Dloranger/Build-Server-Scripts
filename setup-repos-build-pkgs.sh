@@ -1,8 +1,9 @@
 #!/bin/bash
-pkg-name=""
+pkg-name="svxlink"
 
 repo1="release"
 repo2="devel"
+rep3="stable"
 
 apt-get install -y cowbuilder devscripts g++ make cmake libsigc++-2.0-dev libgsm1-dev libpopt-dev libgcrypt11-dev \
 	libspeex-dev libspeexdsp-dev libasound2-dev alsa-utils vorbis-tools sox flac libsox-fmt-mp3 sqlite3 unzip \
